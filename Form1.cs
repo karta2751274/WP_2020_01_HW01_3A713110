@@ -31,8 +31,8 @@ namespace WP_2020_01_HW01_3A713110
                 byte[] crypto = md5.ComputeHash(source);//進行MD5加密
                 string result = Convert.ToBase64String(crypto);//把加密後的字串從Byte[]轉為字串
 
-                MessageBox.Show("姓名分析:  " + result);//輸出結果
-
+               // MessageBox.Show("姓名分析:  " + result);//輸出結果
+                richTextBox1.Text=("姓名分析:  " + result);//輸出結果
 
             }
             catch (Exception)
